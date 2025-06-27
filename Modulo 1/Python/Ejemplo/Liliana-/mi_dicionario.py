@@ -59,5 +59,3 @@ print("Conjunto después de eliminar el número 3 de forma segura:", conjunto)
 
 print("Longitud del conjunto:", len(conjunto))
 print("¿El número 4 está en el conjunto?", 4 in conjunto)
-
-pdvjdnvdh
