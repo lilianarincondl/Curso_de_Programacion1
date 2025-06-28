@@ -2,6 +2,7 @@
 
 # # Ejemplo de uso de conjuntos (set) en Python
 # Definición de un conjunto
+
 mi_conjunto = {1, 2, 3, 4, 5}
 
 # Imprimir el conjunto
@@ -31,11 +32,12 @@ except KeyError as e:
     print("Error al intentar eliminar un elemento que no está en el conjunto:", e)
     
 # Eliminar un elemento del conjunto de forma segura (sin generar error si no existe)
-mi_conjunto.discard(3)  # Elimina el número 3 del conjunto si existe, no genera error si no está
-print("Conjunto después de eliminar el número 3 de forma segura:", mi_conjunto)
+mi_conjunto.discard(30)  # Elimina el número 3 del conjunto si existe, no genera error si no está
+print("\nConjunto después de eliminar el número 30 de forma segura:", mi_conjunto)
 
 # Longitud del conjunto
 print("Longitud del conjunto:", len(mi_conjunto))  # Imprime la cantidad de elementos en el conjunto
+
 # Comprobar si un elemento está en el conjunto
 print("¿El número 4 está en el conjunto?", 4 in mi_conjunto)
 

@@ -16,14 +16,16 @@ def funcion_con_kwargs(**kwargs):
 funcion_con_args(1, 2, 3, "cuatro", True)
 # Ejemplo de uso de **kwargs
 funcion_con_kwargs(nombre="Juan", edad=30, ciudad="Madrid")
+
+
 # Ejemplo combinado de *args y **kwargs
 def funcion_combinada(*args, **kwargs):
-    print("Argumentos posicionales:", args)
+    print("\nArgumentos posicionales:", args)
     print("Argumentos de palabra clave:", kwargs)
     for arg in args:
         print(f"Argumento posicional: {arg}")
     for clave, valor in kwargs.items():
-        print(f"{clave}: {valor}")
+        print(f" hola{clave}: {valor}")
 
 # Llamada a la función combinada
 funcion_combinada(1, 2, 3, nombre="Ana", edad=25, ciudad="Barcelona")

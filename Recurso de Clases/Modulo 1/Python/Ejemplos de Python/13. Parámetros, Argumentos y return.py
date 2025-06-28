@@ -16,6 +16,7 @@ def saludar(nombre):
 # La función devuelve un mensaje que podemos imprimir
 mensaje_saludo = saludar("Ana") 
 print(mensaje_saludo)  # Imprime: ¡Hola, Ana!
+
 def calcular_area_rectangulo(base, altura):
     area = base * altura
     return area
