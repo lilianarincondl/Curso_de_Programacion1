@@ -3,3 +3,12 @@ Git Clone (Aqui colocar el link del repositorio)
 git config user.name "lilianarincondl"
 
 git config user.email "lilianarincondl@gmail.com"
+
+extesiones 
+        Auto Close Tag
+        Auto Complete Tag
+        Auto Rename Tag
+        Code Runner
+        fluent icons
+        mr pink
+        symbols
