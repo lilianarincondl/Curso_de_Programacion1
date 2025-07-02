@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f0f0; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.caja {
+    width: 400px; 
+    background-color: #eaf2f8;
+    border: 2px solid #3498db; 
+    padding: 20px; 
+    margin: 30px auto; 
+    text-align: center; 
+}
+
+.caja img {
+    max-width: 100%; 
+    height: auto; 
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #cfbaf0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.sobre-mi, .cursos {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.foto-perfil {
+    width: 800px;
+    height: auto;
+    border-radius: 75px;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cfbaf0;
+    color: white;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redes-sociales li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.redes-sociales a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
