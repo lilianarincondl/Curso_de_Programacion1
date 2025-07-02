@@ -55,7 +55,7 @@ Ejercicio 4: Mi Primera Hoja de Estilos
 Ejercicio 5: Usando Clases y IDs
 -------------------------------
 🎯 Objetivo: Entender la diferencia entre estilos generales, clases y IDs.
- 
+
 📋 Requisitos:
 - Crear **ejercicio5.html** y **estilo5.css**.
 - En el HTML, escribe un `<h1>` y tres párrafos.
