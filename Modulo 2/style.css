@@ -66,7 +66,7 @@ nav {
 
 .container__left {
   flex: 1;
-  background-image: url("img/bg.jpg");
+  background-image: url("assets/bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
