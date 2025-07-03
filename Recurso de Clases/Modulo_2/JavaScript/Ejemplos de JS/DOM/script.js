@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Devuelve una HTMLCollection de todos los elementos con esa etiqueta.
         const allParagraphs = document.getElementsByTagName('p');
         console.log('Elementos por Etiqueta (párrafos):', allParagraphs);
-
+8888
         // 1.4: Métodos Modernos con Selectores CSS (muy potentes)
         // querySelector: Devuelve el *primer* elemento que coincide con el selector CSS.
         const subtitle = document.querySelector('.subtitle');
