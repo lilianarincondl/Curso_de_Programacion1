@@ -1,4 +1,8 @@
-let edadUsuario = 19
-let tieneentrada = false;
+const edad=19;
+const tieneEntrada=false;
 
-if (edadUsuario >= 18 )
+if (edad >=18 && tieneEntrada) {
+    console.log("acceso concedido");
+} else {
+    console.log("acceso denegado");
+}
