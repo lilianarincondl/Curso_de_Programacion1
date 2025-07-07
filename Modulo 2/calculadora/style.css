@@ -23,6 +23,9 @@ body {
 
 .history {
     grid-column: span 4;
+    background-color: #c59dc9; 
+    padding: 20px;
+    border-radius: 8px; 
 }
 
 #historyTitle {
@@ -34,13 +37,14 @@ body {
     width: 100%;
     padding: 15px 10px;
     font-size: 35px;
-    background-color: transparent;
-    color: #333333;
+    background-color: #c59dc9; 
+    color: #ffffff; 
     border: none;
     text-align: right;
+    border-radius: 8px; 
 }
 .display input::placeholder {
-    color: #9370db;
+    color: #3d2174;
 }
 
 .buttons {

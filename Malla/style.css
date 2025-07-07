@@ -1,0 +1,199 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F4FF; /* Blanco muy suave, casi lila claro */
+    margin: 0;
+    padding: 20px;
+    color: #4A4A4A; /* Gris oscuro para el texto principal */
+    overflow-x: auto; /* Permite el scroll horizontal si hay muchos semestres */
+    min-width: fit-content; /* Ajusta el ancho mínimo del body al contenido */
+}
+
+.container {
+    max-width: none;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #FFFFFF; /* Blanco puro para el contenedor principal */
+    padding: 30px;
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    min-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #8A2BE2; /* Un violeta vibrante para el título */
+    margin-bottom: 40px;
+    font-size: 2.8em; /* Título más grande y elegante */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+/* Contenedor principal para los semestres para la disposición horizontal */
+.semesters-container {
+    display: flex;
+    gap: 20px; /* Espacio entre columnas de semestre */
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.semester {
+    flex-shrink: 0;
+    width: 260px; /* Ancho fijo para cada columna de semestre */
+    background-color: #F0E6FA; /* Lila muy claro para el fondo del semestre */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra suave para destacar */
+    border: 1px solid #E6D9F7; /* Borde lila sutil */
+}
+
+.semester h2 {
+    color: #9370DB; /* Lila medio para los títulos de semestre */
+    margin-top: 0;
+    border-bottom: 2px solid #C9A0DC; /* Un lila más rosado para la línea */
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espacio entre materias */
+}
+
+.course {
+    background-color: #FFF0F5; /* Rosa muy pálido para las tarjetas de materia */
+    border: 1px solid #E6BEE6; /* Borde rosado sutil */
+    border-radius: 8px;
+    padding: 12px; /* Padding ajustado */
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra más sutil */
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    min-height: 85px; /* Altura mínima para los cuadros pequeños */
+}
+
+.course:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FCE7F0; /* Rosa ligeramente más intenso al pasar el ratón */
+}
+
+.course input[type="checkbox"] {
+    margin-right: 12px;
+    min-width: 20px;
+    min-height: 20px;
+    accent-color: #8A2BE2; /* Un violeta para el checkbox cuando está marcado */
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.course label {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.course-name {
+    font-weight: 600; /* Un poco más de peso para el nombre */
+    color: #5C2C8C; /* Un lila oscuro para el nombre de la materia */
+    font-size: 1.05em;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.course-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px; /* Espacio entre los detalles */
+    font-size: 0.85em;
+    color: #7A7A7A; /* Gris más claro para los detalles */
+}
+
+.course-code, .course-uc, .course-prereq {
+    background-color: #EFEFEF; /* Blanco grisáceo para el fondo de los detalles */
+    padding: 3px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+    border: 1px solid #E0E0E0; /* Borde muy sutil para los tags */
+}
+
+.course-prereq {
+    font-style: italic;
+    color: #A0A0A0; /* Gris para los requisitos */
+}
+
+/* Estilo para materias completadas (tachadas) */
+.course input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #B0B0B0; /* Texto gris claro cuando está tachado */
+    opacity: 0.8; /* Menos opaco, más sutil */
+}
+
+.course input[type="checkbox"]:checked + label .course-name,
+.course input[type="checkbox"]:checked + label .course-details span {
+    color: #B0B0B0;
+    background-color: #F8F8F8; /* Fondo más claro para los detalles cuando está tachado */
+    border-color: #F0F0F0;
+}
+
+/* Estilo para materias deshabilitadas (prerrequisitos no cumplidos) */
+.course.disabled {
+    opacity: 0.6; /* Un poco menos opaco para distinguir */
+    cursor: not-allowed;
+    background-color: #FAFAFA; /* Blanco muy claro */
+    box-shadow: none; /* Sin sombra para las deshabilitadas */
+}
+
+.course.disabled input[type="checkbox"] {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.course.disabled label {
+    cursor: not-allowed;
+}
+
+
+/* Media Queries para adaptabilidad en pantallas más pequeñas (vertical si no cabe horizontal) */
+@media (max-width: 1100px) { /* Ajustado el breakpoint para que se envuelva antes */
+    .semesters-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .semester {
+        width: 320px; /* Un poco más ancho si van a estar apilados */
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .semester {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    .semester h2 {
+        font-size: 1.4em;
+    }
+    .course {
+        padding: 10px;
+        min-height: 75px;
+    }
+    .course-name {
+        font-size: 0.9em;
+    }
+    .course-details {
+        font-size: 0.75em;
+    }
+}
