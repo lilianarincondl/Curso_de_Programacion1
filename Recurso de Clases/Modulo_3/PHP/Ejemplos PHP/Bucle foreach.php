@@ -20,7 +20,7 @@ $capitales = [
     "Japón" => "Tokio"
 ];
 
-foreach ($capitales as $pais => $capital) {
+forecah ($capitales as $pais => $capital) {
     echo "La capital de " . $pais . " es " . $capital . ".\n";
 }
 ?>

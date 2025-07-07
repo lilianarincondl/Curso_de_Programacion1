@@ -16,7 +16,7 @@ switch ($metodoDePago) {
         echo "Pago por transferencia seleccionado. Muestra el comprobante.\n";
         break;
         
-    case "pagomovil":
+    case "paypal":
         echo "Pago con PayPal seleccionado. Serás redirigido para completar la transacción.\n";
         break;
 
