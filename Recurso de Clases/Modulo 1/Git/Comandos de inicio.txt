@@ -11,4 +11,4 @@ extesiones
         Code Runner
         fluent icons
         mr pink
-        symbols
+        symbols 

@@ -1,7 +1,7 @@
 <?php
-echo "## Metodos de pah\n";
+echo " Metodos de pago \n";
 
-$metodoDePago = "tarjeta";
+$metodoDePago = "Tarjeta";
 
 switch ($metodoDePago) {
     case "Efectivo":
