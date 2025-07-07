@@ -6,14 +6,14 @@ Desarrolla un programa que simule un juego de "adivina el número". Define una v
 
 Escribe un script que calcule la suma de todos los números impares desde el 1 hasta el 100.
 
-Crea un programa que verifique si una persona puede obtener una licencia de conducir. La condición es que debe tener al menos 18 años y no más de 65 años. Define una variable para la edad y muestra si cumple los requisitos o no.
+NO Crea un programa que verifique si una persona puede obtener una licencia de conducir. La condición es que debe tener al menos 18 años y no más de 65 años. Define una variable para la edad y muestra si cumple los requisitos o no.
 
-Utilizando bucles anidados, crea un script que dibuje un cuadrado de 5x5 en la terminal utilizando el carácter #.
+Utilizando bucles anidados, crea un script que dibuje un cuadrado de 5x5 en la terminal utilizando el carácter #. NO
 
 Desarrolla un script que determine si un número almacenado en una variable es positivo, negativo o cero y muestre el resultado.
 
 Escribe un programa que imprima los números del 1 al 30. Para los múltiplos de 3, debe imprimir "Mar" en su lugar. Para los múltiplos de 5, debe imprimir "Tierra". Para los múltiplos de ambos (3 y 5), debe imprimir "MarTierra".
-
+ 
 Crea un script que, dada una variable numérica que representa la temperatura en grados Celsius, muestre un mensaje diferente si la temperatura es "fría" (menos de 10°C), "templada" (entre 10°C y 25°C) o "calurosa" (más de 25°C).
 
 Escribe un programa que realice una cuenta regresiva para Año Nuevo desde el 10 hasta el 1. Al final, debe mostrar el mensaje "¡Feliz Año Nuevo!".
