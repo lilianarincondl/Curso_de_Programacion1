@@ -41,10 +41,10 @@ equal.addEventListener("click", () => {
             .replaceAll("cos", "Math.cos")
             .replaceAll("tan", "Math.tan")
             .replaceAll("^2", "**2")
-            .replaceAll("^3", "**3")
+            .replaceAll("^", "**")
             .replaceAll("√", "Math.sqrt")
             .replaceAll("∛", "Math.cbrt")
-            .replace(/(\d+)!/g, (_, num) => factorial(Number(num)));
+            .replaceAll(/%/g, '/100');
 
         let result = eval(expression);
         if (Number.isNaN(result) || !Number.isFinite(result)) {
