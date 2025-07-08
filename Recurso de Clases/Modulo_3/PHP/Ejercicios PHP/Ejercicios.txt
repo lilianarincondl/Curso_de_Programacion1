@@ -1,0 +1,57 @@
+🧠 EXAMEN DE PROGRAMACIÓN EN PHP
+📄 Instrucciones: Desarrolla cada uno de los siguientes scripts utilizando el lenguaje PHP. Asegúrate de comentar tu código y probar su funcionamiento.
+
+------------------------------------------------------------
+
+1️⃣ Contador de Pares e Impares
+🔢 Escribe un script que cuente y muestre la cantidad de números pares e impares que hay en el rango del 1 al 50.
+
+------------------------------------------------------------
+
+2️⃣ Tabla de Multiplicar del 8
+✖️ Crea un script que genere y muestre en la terminal la tabla de multiplicar completa del número 8, desde el 8×1 hasta el 8×10.
+
+------------------------------------------------------------
+
+3️⃣ Juego: Adivina el Número
+🎯 Desarrolla un programa que simule un juego de "adivina el número". Define una variable con un número secreto y utiliza un bucle while para intentar adivinarlo, incrementando un contador hasta encontrarlo. Muestra cada intento.
+
+------------------------------------------------------------
+
+4️⃣ Suma de Impares del 1 al 100
+➕ Escribe un script que calcule la suma de todos los números impares desde el 1 hasta el 100.
+
+------------------------------------------------------------
+
+5️⃣ Verificación para Licencia de Conducir
+🚗 Crea un programa que verifique si una persona puede obtener una licencia de conducir. La condición es que debe tener al menos 18 años y no más de 65 años. Define una variable para la edad y muestra si cumple los requisitos o no.
+
+------------------------------------------------------------
+
+6️⃣ Dibujo de un Cuadrado con #
+🧱 Utilizando bucles anidados, crea un script que dibuje un cuadrado de 5×5 en la terminal utilizando el carácter #.
+
+------------------------------------------------------------
+
+7️⃣ Clasificación de un Número
+➖➕ Desarrolla un script que determine si un número almacenado en una variable es positivo, negativo o cero, y muestre el resultado correspondiente.
+
+------------------------------------------------------------
+
+8️⃣ Impresión Condicional: Mar y Tierra
+🌊🌍 Escribe un programa que imprima los números del 1 al 30. Para los múltiplos de 3, debe imprimir "Mar"; para los múltiplos de 5, "Tierra"; y para los múltiplos de ambos, "MarTierra".
+
+------------------------------------------------------------
+
+9️⃣ Clasificación de Temperatura
+🌡️ Crea un script que, dada una variable numérica que representa la temperatura en grados Celsius, muestre un mensaje diferente según el valor:
+   ❄️ "Fría" si es menor de 10°C  
+   🌤️ "Templada" si está entre 10°C y 25°C  
+   🔥 "Calurosa" si es mayor de 25°C
+
+------------------------------------------------------------
+
+🔟 Cuenta Regresiva de Año Nuevo
+🎆 Escribe un programa que realice una cuenta regresiva desde el 10 hasta el 1. Al finalizar, debe mostrar el mensaje: "¡Feliz Año Nuevo! 🎉"
+
+------------------------------------------------------------

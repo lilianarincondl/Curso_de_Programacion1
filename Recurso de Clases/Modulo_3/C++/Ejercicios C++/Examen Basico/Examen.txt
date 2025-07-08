@@ -1,0 +1,75 @@
+📘 EXAMEN DE PROGRAMACIÓN EN C++
+
+🧪 Ejercicio 1: "Hola Mundo" y Tipos de Datos
+Escribe un programa que imprima en la consola el mensaje "¡Hola, Mundo!". Luego, declara e inicializa una variable para cada uno de los siguientes tipos de datos:
+- Entero (int)
+- Flotante (float)
+- Carácter (char)
+- Booleano (bool)
+
+Finalmente, imprime el valor de cada una de estas variables.
+
+📚 Temas: iostream, Variables, Tipos de datos.
+
+🧮 Ejercicio 2: Operadores y Librería cmath
+Crea un programa que solicite al usuario dos números. El programa debe calcular y mostrar:
+- La suma, resta, multiplicación y división de los dos números.
+- Utilizando la librería <cmath>, calcula y muestra la potencia del primer número elevado al segundo y la raíz cuadrada del primer número.
+
+📚 Temas: Operadores, iostream, Librería cmath.
+
+🔍 Ejercicio 3: Condicionales if-else
+Desarrolla un programa que pida al usuario su edad. El programa debe utilizar una estructura condicional if-else para determinar si el usuario es mayor de edad (18 años o más) y mostrar un mensaje apropiado en la pantalla.
+
+📚 Temas: Condicionales, Operadores, Variables.
+
+🔁 Ejercicio 4: Bucle for y Constantes con #define
+Utiliza #define para crear una constante simbólica llamada LIMITE con un valor de 10. Luego, escribe un programa que pida al usuario un número y utilice un bucle for para imprimir la tabla de multiplicar de ese número desde 1 hasta LIMITE.
+
+📚 Temas: Bucle for, #define, iostream.
+
+🎯 Ejercicio 5: Bucle while
+Crea un programa que simule un juego de adivinanza. El programa debe generar un número secreto (por ejemplo, int numeroSecreto = 42;). Luego, debe pedir al usuario que adivine el número. Utiliza un bucle while para que el programa siga pidiendo un número mientras el usuario no adivine el correcto. Proporciona pistas como "más alto" o "más bajo".
+
+📚 Temas: Bucle while, Condicionales, Variables.
+
+📋 Ejercicio 6: Bucle do-while y switch
+Escribe un programa que muestre un menú simple con tres opciones:
+1. Saludar
+2. Despedirse
+3. Salir
+
+El programa debe usar un bucle do-while para mostrar el menú repetidamente hasta que el usuario elija la opción "Salir". Utiliza una estructura switch para manejar la opción seleccionada por el usuario y mostrar el mensaje correspondiente.
+
+📚 Temas: Bucle do-while, Condicionales switch, iostream.
+
+📐 Ejercicio 7: Funciones con Valor de Retorno
+Desarrolla un programa que contenga una función llamada calcularAreaRectangulo.
+- Declara (Prototipo) la función al inicio del programa.
+- La función debe recibir dos parámetros de tipo float: la base y la altura.
+- La función debe devolver el área calculada.
+- Desde la función main, solicita al usuario la base y la altura, llama a la función y muestra el resultado.
+
+📚 Temas: Declaración y Definición de Funciones, Función que devuelve valor y recibe parámetros.
+
+🔄 Ejercicio 8: Paso por Valor vs. Paso por Referencia
+Crea un programa que demuestre la diferencia entre el paso por valor y el paso por referencia.
+- Define una función void llamada modificarPorValor que reciba un entero por valor y le sume 10 dentro de la función.
+- Define otra función void llamada modificarPorReferencia que reciba un entero por referencia y le sume 10.
+- En main, declara una variable entera llamada numero e inicialízala en 20. Imprime su valor, llama a modificarPorValor, vuelve a imprimir numero. Luego, llama a modificarPorReferencia y vuelve a imprimir el valor de numero para observar la diferencia.
+
+📚 Temas: Paso por valor vs. Paso por referencia, Funciones.
+
+🍽️ Ejercicio 9: Librerías vector y string
+Escribe un programa que pida al usuario que ingrese 3 de sus comidas favoritas. Almacena cada comida en un vector de tipo string. Después de que el usuario haya ingresado las tres, utiliza un bucle para recorrer el vector e imprimir cada una de las comidas en la consola.
+
+📚 Temas: Librería vector, Librería string, Bucles.
+
+🧮 Ejercicio 10: Constantes const y Funciones void
+Crea un programa para calcular el perímetro de un círculo.
+- Declara una constante de tipo double usando la palabra clave const para el valor de Pi (π≈3.14159).
+- Escribe una función void llamada calcularPerimetro que no devuelva ningún valor pero que reciba como parámetro el radio del círculo.
+- Dentro de esta función, calcula el perímetro (2⋅π⋅radio) y muéstralo directamente en la consola.
+- Desde main, pide al usuario el radio y llama a la función calcularPerimetro.
+
+📚 Temas: const, Función que no devuelve valor, Parámetros de función.
