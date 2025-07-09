@@ -58,11 +58,7 @@ Crea un programa que demuestre la diferencia entre el paso por valor y el paso p
 - Define otra función void llamada modificarPorReferencia que reciba un entero por referencia y le sume 10.
 - En main, declara una variable entera llamada numero e inicialízala en 20. Imprime su valor, llama a modificarPorValor, vuelve a imprimir numero. Luego, llama a modificarPorReferencia y vuelve a imprimir el valor de numero para observar la diferencia.
 
-📚 Temas: Paso por valor vs. Paso por referencia, Funciones.
-
-🍽️ Ejercicio 9: Librerías vector y string
-Escribe un programa que pida al usuario que ingrese 3 de sus comidas favoritas. Almacena cada comida en un vector de tipo string. Después de que el usuario haya ingresado las tres, utiliza un bucle para recorrer el vector e imprimir cada una de las comidas en la consola.
-
+z
 📚 Temas: Librería vector, Librería string, Bucles.
 
 🧮 Ejercicio 10: Constantes const y Funciones void
