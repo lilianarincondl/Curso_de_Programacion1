@@ -1,29 +1,20 @@
-#include <iostream> // Necesario para std::cout, std::cin, std::endl
-#include <vector>   // Necesario para usar std::vector
-#include <string>   // Necesario para usar std::string
+#include <iostream>
+#include <cmath>
+
+const double PI_VALUE = 3.14159;
+
+void calcularPerimetro(double radio) {
+    double perimetro = 2 * PI_VALUE * radio;
+    std::cout << "El perimetro del circulo con radio " << radio << " es: " << perimetro << std::endl;
+}
 
 int main() {
-    // Declarar un vector de strings para almacenar las comidas
-    std::vector<std::string> comidasFavoritas;
+    double radioCirculo;
 
-    std::cout << "¡Hola! Por favor, ingresa 3 de tus comidas favoritas." << std::endl;
+    std::cout << "Ingresa el radio del circulo: ";
+    std::cin >> radioCirculo;
 
-    // Bucle para pedir al usuario que ingrese 3 comidas
-    for (int i = 0; i < 3; ++i) {
-        std::string comida; // Variable temporal para guardar cada comida
-        std::cout << "Comida #" << i + 1 << ": ";
-        // Usamos std::getline para leer la línea completa, incluyendo espacios
-        std::getline(std::cin >> std::ws, comida); // std::ws descarta cualquier espacio en blanco pendiente
-        comidasFavoritas.push_back(comida); // Añadir la comida al vector
-    }
+    calcularPerimetro(radioCirculo);
 
-    std::cout << "\n--- Tus comidas favoritas son: ---" << std::endl;
-
-    // Bucle para recorrer el vector e imprimir cada comida
-    // El bucle for-each es ideal para esto
-    for (const std::string& comida : comidasFavoritas) {
-        std::cout << "- " << comida << std::endl;
-    }
-
-    return 0; // Indica que el programa finalizó correctamente
+    return 0;
 }

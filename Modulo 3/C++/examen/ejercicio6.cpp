@@ -7,11 +7,11 @@ while True:
     opcion = input("Por favor, elige una opción: ")
 
     if opcion == '1':
-        print("¡Hola! Bienvenido/a.")
+        print("¡Hola Mundito, ¿Como Estás?! Bienvenido/a.")
     elif opcion == '2':
-        print("¡Adiós! Que tengas un buen día.")
+        print("¡Adiós Amiguis! Que tengas un buen día Cosito lindo.")
     elif opcion == '3':
-        print("Saliendo del programa. ¡Hasta luego!")
+        print(" Estas saliendo del programa. ¡Hasta luego Amiwuis!")
         break
     else:
-        print("Opción no válida. Por favor, intenta de nuevo.")
+        print("Opción no válida. Por favor, intenta de nuevo Bro.")
