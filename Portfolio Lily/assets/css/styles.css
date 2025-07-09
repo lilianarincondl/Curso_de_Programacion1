@@ -147,6 +147,33 @@ img {
   z-index: var(--z-fixed);
 }
 
+.nav{
+  height: calc(var(--header-height) + 2.5rem);
+display: flex;
+justify-content: space-between;
+align-items: center;
+column-gap: 3rem;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__list{
+  display: flex;
+  column-gap: 2rem;
+}
+
+.nav__link {
+  position: relative;
+  color: var(--font-medium);
+  transition: .4s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
 /* Active link */
 
 
