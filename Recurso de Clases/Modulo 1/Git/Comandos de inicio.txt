@@ -6,7 +6,7 @@ git config user.email "lilianarincondl@gmail.com"
 
 extesiones 
         Auto Close Tag
-        Auto Complete Tag
+        Auto Complete Tag 
         Auto Rename Tag
         Code Runner
         fluent icons
