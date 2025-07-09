@@ -168,7 +168,7 @@ column-gap: 3rem;
 .nav__link {
   position: relative;
   color: var(--font-medium);
-  transition: -4s;
+  transition: .4s;
 }
 
 .nav__link:hover {
@@ -201,10 +201,16 @@ column-gap: 3rem;
   height: 2px;
   background-color: var(--first-color);
   border-radius: 25%;
+  transition: .4s;
 }
 
+.nav__link:hover ::before,
 .active-link::before{
  width: 30px;
+}
+
+.active-link{
+  color: var(--first-color);
 }
 
 /* Change background header */
