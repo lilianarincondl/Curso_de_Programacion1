@@ -313,7 +313,7 @@ section{
 }
 
 /* Los colores de las barras de habilidad se han ajustado para complementar el lila,
-   manteniendo diferenciación pero con tonos más acordes. */
+    manteniendo diferenciación pero con tonos más acordes. */
 .skills .content .col-right .bar .html::before{
     width: 50%;
     background-color: #e45126; /* Naranja HTML */
@@ -451,16 +451,16 @@ section{
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 20px;
-  }
-  
-  .contact .content .row{
+ }
+ 
+ .contact .content .row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-  }
-  
-  .contact .content .row .card{
+ }
+ 
+ .contact .content .row .card{
     background: #fff;
     width: 240px;
     margin: 20px;
@@ -471,60 +471,60 @@ section{
     flex-direction: column;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
-  }
-  
-  .contact .content .row .card .contact-icon{
+ }
+ 
+ .contact .content .row .card .contact-icon{
     color: #B284BE; /* Lila principal suave */
     font-size: 4em;
     text-align: center;
     transition: transform 0.5s ease;
-  }
-  
-  .contact .content .row .card:hover .contact-icon{
+ }
+ 
+ .contact .content .row .card:hover .contact-icon{
     transform: translateY(-10px);
-  }
-  
-  .contact .content .row .card .info{
+ }
+ 
+ .contact .content .row .card .info{
     text-align: center;
-  }
-  
-  .contact .content .row .card .info h3{
+ }
+ 
+ .contact .content .row .card .info h3{
     color: #111;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
-  }
-  
-  .contact .content .row .card .info span{
+ }
+ 
+ .contact .content .row .card .info span{
     color: #666;
     font-weight: 500;
-  }
-  
-  .contact-form{
+ }
+ 
+ .contact-form{
     background: #fff;
     max-width: 600px;
     margin-top: 50px;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-  }
-  
-  .contact-form h3{
+ }
+ 
+ .contact-form h3{
     color: #111;
     font-size: 1.6em;
     font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  .contact-form .input-box{
+ }
+ 
+ .contact-form .input-box{
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-  }
-  
-  .contact-form .input-box input,
-  .contact-form .input-box textarea{
+ }
+ 
+ .contact-form .input-box input,
+ .contact-form .input-box textarea{
     color: #111;
     width: 100%;
     padding: 10px;
@@ -534,9 +534,9 @@ section{
     border: 1px solid #111;
     border-radius: 5px;
     resize: none;
-  }
-  
-  .contact-form .input-box .send-btn{
+ }
+ 
+ .contact-form .input-box .send-btn{
     color: #fff;
     background: #B284BE; /* Lila principal suave */
     display: inline-block;
@@ -548,37 +548,37 @@ section{
     border: none;
     cursor: pointer;
     transition: 0.5s ease;
-  }
-  
-  .contact-form .input-box .send-btn:hover{
+ }
+ 
+ .contact-form .input-box .send-btn:hover{
     background: #9C6AAB; /* Un lila un poco más oscuro para hover de botón */
-  }
+ }
 
-  /* Footer */
-  
-  .footer{
+ /* Footer */
+ 
+ .footer{
     background: #000016; /* Negro muy oscuro, se mantiene */
     color: #fff;
     text-align: center;
     padding: 2em;
-  }
-  
-  .footer .footer-title{
+ }
+ 
+ .footer .footer-title{
     font-size: 20px;
     font-weight: 600;
-  }
-  
-  .footer p{
+ }
+ 
+ .footer p{
     font-size: 16px;
     margin-top: 10px;
-  }
-  
-  .footer p a{
+ }
+ 
+ .footer p a{
     color: #B284BE; /* Lila principal suave */
     font-weight: 600;
     text-decoration: none;
-  }
-  
+ }
+ 
 
 @media (max-width:1040px) {
     
@@ -626,7 +626,7 @@ section{
 
     .menu-btn{
         position: absolute;
-        background-image: url(Image/menu.png);
+        background-image: url(Image/menu.png); /* Asegúrate de que esta imagen exista */
         background-position: center;
         background-size: 30px;
         background-repeat: no-repeat;
@@ -640,7 +640,7 @@ section{
 
     .menu-btn.active{
         z-index: 999;
-        background-image: url(Image/close.png);
+        background-image: url(Image/close.png); /* Asegúrate de que esta imagen exista */
         background-repeat: no-repeat;
         background-position: center;
         background-size: 25px;
@@ -668,7 +668,8 @@ section{
         flex-direction: column;
     }
 
-    .about .content .column{
+    .about .content .col-left,
+    .about .content .col-right{ /* Simplificado para evitar repetición */
         width: 100%;
         position: relative;
     }
@@ -678,12 +679,12 @@ section{
     }
 
     /* Skills */
-
     .skills .content{
         flex-direction: column;
     }
 
-    .skills .content .column{
+    .skills .content .col-left,
+    .skills .content .col-right{ /* Simplificado para evitar repetición */
         position: relative;
         width: 100%;
     }
@@ -694,7 +695,210 @@ section{
     
     .contact-form{
         padding: 35px 40px;
-      }
+    }
+}
+
+/* **Nuevas media queries para dispositivos más pequeños** */
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    header .brand {
+        font-size: 1.6em;
+    }
+
+    .main .content {
+        text-align: center;
+        max-width: 100%; /* Permite que el contenido ocupe más espacio */
+    }
+    
+    .main .content h2 {
+        font-size: 0.9em;
+    }
+
+    .main .content h2 span {
+        font-size: 2.2rem;
+    }
+
+    .animated-text h3 {
+        font-size: 1.8em;
+        line-height: 60px; /* Ajuste para un tamaño de fuente más pequeño */
+        height: 60px;
+    }
+
+    @keyframes text-move {
+        0%,15%{ margin-top: 0px; }
+        25%,40%{ margin-top: -60px; }
+        50%,65%{ margin-top: -120px; }
+        75%,90%{ margin-top: -60px; }
+        100%{ margin-top: 0px; }
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .media-icons {
+        text-align: center;
+    }
+    .media-icons a {
+        font-size: 22px;
+        margin: 0 15px; /* Ajusta el margen entre íconos */
+    }
+
+    section {
+        padding: 60px 15px; /* Reduce el padding general de las secciones */
+    }
+
+    .section-title {
+        font-size: 1.6em;
+        margin-bottom: 40px;
+    }
+
+    .title p {
+        width: 95%; /* El párrafo del título ocupa más ancho */
+    }
+
+    .about .content .col-left .img-card {
+        min-height: 300px; /* Reduce la altura mínima de la imagen */
+    }
+
+    .services .content .card,
+    .work .content .card {
+        width: 95%; /* Las tarjetas pueden ocupar casi todo el ancho */
+        margin: 10px auto; /* Centrar las tarjetas */
+    }
+
+    .contact .content .row {
+        flex-direction: column; /* Apila las tarjetas de contacto */
+        align-items: center; /* Centra las tarjetas apiladas */
+    }
+
+    .contact .content .row .card {
+        width: 95%; /* Las tarjetas de contacto también pueden ocupar el ancho completo */
+        margin: 15px 0;
+    }
+
+    .contact-form {
+        width: 95%;
+        margin: 30px auto;
+        padding: 30px;
+    }
+
+    .footer {
+        padding: 1.5em 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .brand {
+        font-size: 1.4em;
+    }
+
+    .menu-btn {
+        width: 35px;
+        height: 35px;
+        background-size: 25px;
+    }
+    .menu-btn.active {
+        background-size: 20px;
+    }
+
+    header .navigation.active {
+        width: 100%;
+    }
+
+    .main .content h2 {
+        font-size: 0.8em;
+    }
+    .main .content h2 span {
+        font-size: 1.8rem;
+    }
+
+    .animated-text {
+        height: 40px; /* Ajustar la altura para texto más pequeño */
+    }
+    .animated-text h3 {
+        font-size: 1.3em;
+        line-height: 40px; /* Ajustar la altura de línea */
+    }
+
+    @keyframes text-move {
+        0%,15%{ margin-top: 0px; }
+        25%,40%{ margin-top: -40px; }
+        50%,65%{ margin-top: -80px; }
+        75%,90%{ margin-top: -40px; }
+        100%{ margin-top: 0px; }
+    }
+
+    .btn {
+        font-size: 0.8em;
+        padding: 7px 12px;
+    }
+
+    .media-icons a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+    .section-title::before {
+        width: 100px;
+        top: 45px;
+    }
+    .section-title::after {
+        top: 40px;
+    }
+
+    .about .content .col-right .content-title {
+        font-size: 1.6em;
+    }
+    .about .content .col-left .img-card {
+        min-height: 250px;
+    }
+
+    .skills .content .col-left .content-title {
+        font-size: 1.6em;
+    }
+    .skills .content .col-right .bar .info span {
+        font-size: 16px;
+    }
+
+    .services .content .card .service-icon {
+        font-size: 6rem;
+    }
+    .services .content .card .info h3 {
+        font-size: 1em;
+    }
+
+    .work .content .card {
+        width: 100%; /* Asegura que la tarjeta ocupe el ancho completo */
+    }
+
+    .contact-form h3 {
+        font-size: 1.4em;
+    }
+    .contact-form .input-box input,
+    .contact-form .input-box textarea {
+        font-size: 0.9em;
+    }
+    .contact-form .input-box .send-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .footer .footer-title {
+        font-size: 18px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
 }
 
 
